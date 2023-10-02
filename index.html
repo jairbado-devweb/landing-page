@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte Sob Medida</title>
+    <link rel="icon" href="./components/images/Simbolo.png" type="image/png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./components/images/Logotipo.png" alt="Logotipo da empresa" id="title">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#" id="inscreva-se">Já tem uma conta?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Sua Visão,</h2>
+            <h2><span>Nossa Criação</span></h2>
+        </article>
+
+        <article>
+            <h3><span>Bem-vindo à Arte Sob Medida!</span></h3>
+            <p>Na <span>Arte Sob Medida</span>, transformamos sua visão artística em obras-primas feitas sob encomenda,
+                refletindo sua alma com paixão e comprometimento. Cada detalhe é cuidadosamente escolhido para dar vida
+                à sua imaginação em uma tela em branco.</p>
+            <p>Nós estamos prontos para atender suas preferências, trabalhamos com obras originais e réplicas e enviamos
+                o produto via email e/ou fisicamente.</p>
+        </article>
+    </main>
+
+    <div>
+        <h3 id="faixa">Estamos Ansiosos para Ouvir Sua Visão Artística. Compartilhe-a Conosco!</h3>
+    </div>
+
+    <div id="formulario">
+        <article>
+            <p>Se já tiver uma conta, você será redirecionado para uma página onde poderá dar continuidade ao seu pedido
+                após
+                o envio do formulário.
+            </p>
+
+            <form id="pedido" action="caminho_para_processar_formulario.php" method="post">
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="email" name="email" placeholder="E-mail">
+                <label for="tipo_de_arte">Qual tipo de arte você deseja?</label>
+                <select name="tipo_de_arte" id="tipo_de_arte">
+                    <option value="desenho">Desenho</option>
+                    <option value="pintura">Pintura</option>
+                    <option value="escultura">Escultura</option>
+                </select>
+                <p>Deseja nos enviar uma imagem de referência?</p>
+                <label for="imagem_referencia" class="file-upload">
+                    <span>Selecionar arquivo</span>
+                    <input type="file" id="imagem_referencia" name="imagem_referencia">
+                </label>
+                <textarea name="observacoes" placeholder="Observações"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+
+        <article id="imagem">
+            <img src="components/images/Artes.png" alt="Tipos de arte">
+        </article>
+    </div>
+
+    <div>
+        <form id="comentarios">
+            <h4 id="textocomentarios" style="margin-top: 10px;"><span>Comentários dos Usuários</span></h4>
+            <label for="comentario">Deixe seu comentário:</label>
+            <textarea name="comentario" class="comentario-textarea" rows="4" cols="100"
+                placeholder="Digite seu comentário aqui..."></textarea>
+            <input type="submit" value="Enviar Comentário" id="avaliacao">
+        </form>
+    </div>
+
+    <a id="topo" href="#">&#9650;</a>
+
+    <footer>
+        <h4><span>Siga-nos nas Redes Sociais</span></h4>
+        <ul id="redes-sociais">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

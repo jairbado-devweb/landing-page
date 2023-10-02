@@ -1,0 +1,76 @@
+@media screen and (max-width: 760px) {
+    #inscreva-se {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        order: 3;
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #faixa {
+        margin: 20px 0;
+    }
+
+    #formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imagem {
+        display: none;
+    }
+
+    .comentario-textarea {
+        width: 100%;
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+    #avaliacao {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    footer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 10px;
+    }
+
+    footer li {
+        display: inline;
+    }
+
+    footer a {
+        color: white;
+        font-size: 24px;
+    }
+}
